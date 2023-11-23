@@ -1,0 +1,544 @@
+/** navbar */
+nav{
+    position:fixed;
+    z-index: 10;
+    width: 100%;
+    height:5%;
+    position:fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    opacity: 100%;
+    justify-content:space-evenly;
+}
+
+nav li {
+    letter-spacing: 1px;
+    display: inline-block; 
+}
+
+nav li a {
+    color: rgb(83, 83, 83);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav li a:hover{
+    color:white;
+    text-shadow: 1px 1px rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* homepage */
+.sky {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.banner {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    animation: bannerMove 3s forwards, float 1s infinite alternate;
+}
+
+.title-position {
+    position: absolute;
+    top: 60%;
+    left: -100%;
+    width: 65%;
+    height: 100px;
+    animation: titleRun 1s 2s forwards;
+}
+
+.drop-icon {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    opacity: 0;
+    animation: drop 1s 3s infinite alternate;
+    cursor: pointer;
+}
+
+/* content */
+.relative-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 147vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+}
+
+.title-style {
+    font-size: 170px;
+    font-weight: bolder;
+    color: white;
+}
+
+.mvp-title-position {
+    position: absolute;
+    left: 38%;
+    top: 42%;
+}
+
+.content {
+    position: absolute;
+    opacity: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.intro-content-position {
+    width: 35%;
+    top: 50%;
+    left: 5%;
+}
+
+.content-position {
+    width: 45%;
+    top: 50%;
+    left: 5%;
+}
+
+.reflection-content {
+    width: 90%;
+    top: 10%;
+    left: 5%;
+}
+
+#about-project {
+    width: 90%;
+    top: 75%;
+    left: 5%;
+}
+
+#reflection-content {
+    width: 90%;
+}
+
+.intro-title-position {
+    position: absolute;
+    left: 7%;
+    top: 55%;
+}
+
+.inspiration-title-position {
+    position: absolute;
+    left: 14%;
+    top: 38%;
+}
+
+.proposal-title-position {
+    position: absolute;
+    left: 14%;
+    top: 19%;
+}
+
+.portfolio-title-position {
+    position: absolute;
+    left: 14%;
+    top: 53%;
+}
+
+.final-title-position {
+    position: absolute;
+    width: 50%;
+    left: 30%;
+    top: 20%;
+}
+
+.reflection-title-position {
+    position: absolute;
+    left: 25%;
+    top: 12%;
+}
+
+.reference-title {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.reference-content {
+    position: absolute;
+    width: 90%;
+    top: 20%;
+    left: 5%;
+}
+
+.reference-content a {
+    color: white;
+}
+
+.reference-content p {
+    font-size: 16px;
+}
+
+/* photo */
+.photo-container1 {
+    position: absolute;
+    width: 50%;
+    height: 25%;
+    top: 45%;
+    left: 45%;
+    opacity: 0;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.photo-container2 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: -5%;
+    left: 15%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.387);
+    /* opacity: 0; */
+}
+
+.photo-container2 p {
+    color: rgb(49, 49, 49);
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+#myphoto {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+#homepage-photo {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+#my-contact {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    color: white;
+}
+
+#my-contact a {
+    color:white;
+    text-decoration:underline;
+}
+
+.content button a {
+    text-decoration:none;
+    color:black;
+}
+
+.content button {
+    position: absolute;
+    right: 1%;
+    bottom: -2%;
+}
+
+.photo-container {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 55%;
+    left: 55%;
+    background-color: rgba(255, 255, 255, 0.387);
+    opacity: 0;
+}
+
+.photo {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.left-arrow {
+    position: absolute;
+    opacity: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.right-arrow {
+    position: absolute;
+    opacity: 60%;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%); 
+    cursor: pointer;
+}
+
+.photo ul li {
+	float: left;
+    position: relative;
+	width: 10%;
+    height:90%;
+    padding:0;
+    margin:0;
+	list-style: none;
+}
+
+.photo ul li p {
+    color: rgb(49, 49, 49);
+    position: absolute;
+    z-index: 10;
+	bottom: -15%;
+    width: 100%;
+    text-align: center;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.photo ul {
+	width: 1000%;
+    height:100%;
+    list-style: none;
+    position:relative;
+    margin:0;
+    padding:0;
+}
+
+.photo img {
+    cursor: pointer;
+}
+
+.preview-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.preview-content img {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+@keyframes drop {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 100%;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes bannerMove {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 5%;
+    }
+}
+
+@keyframes titleRun {
+    50% {
+        left: 58%;
+        width: 30%;
+        transform: skew(-20deg, 10deg);
+    }
+    80% {
+        left: 58%;
+        width: 30%;
+        transform: skew(-20deg, 10deg);
+    }
+    100% {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        transform-origin: right;
+    }
+}
+
+@keyframes titleZoomOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        font-size: 48px;
+        top: 35vh;
+        left:5%;
+        z-index: 2;
+    }
+}
+
+@keyframes titleZoomIn1 {
+    0% {
+        font-size: 48px;
+        top: 40%;
+        left:5%;
+        z-index: 2; 
+    }
+    100% {
+        font-size: 170px;
+        left: 7%;
+        top: 55%;
+    }
+}
+
+@keyframes titleZoomIn2 {
+    0% {
+        font-size: 48px;
+        top: 40%;
+        left:5%;
+        z-index: 2; 
+    }
+    100% {
+        font-size: 170px;
+        left: 14%;
+        top: 38%;
+    }
+}
+
+@keyframes titleZoomIn3 {
+    0% {
+        font-size: 48px;
+        top: 40%;
+        left:5%;
+        z-index: 2; 
+    }
+    100% {
+        font-size: 170px;
+        left: 14%;
+        top: 19%;
+    }
+}
+
+@keyframes titleZoomIn4 {
+    0% {
+        font-size: 48px;
+        top: 40%;
+        left:5%;
+        z-index: 2; 
+    }
+    100% {
+        font-size: 170px;
+        left: 38%;
+        top: 42%;
+    }
+}
+
+@keyframes titleZoomIn5 {
+    0% {
+        font-size: 48px;
+        top: 40%;
+        left:5%;
+        z-index: 2; 
+        opacity: 0;
+    }
+    100% {
+        font-size: 170px;
+        left: 30%;
+        top: 20%;
+    }
+}
+
+@keyframes titleZoomIn6 {
+    0% {
+        font-size: 48px;
+        top: 40%;
+        left:5%;
+        z-index: 2; 
+    }
+    100% {
+        font-size: 170px;
+        left: 14%;
+        top: 53%;
+    }
+}
+
+@keyframes titleZoomIn7 {
+    0% {
+        font-size: 48px;
+        top: 40%;
+        left:5%;
+        z-index: 2; 
+        opacity: 0;
+    }
+    100% {
+        font-size: 170px;
+        left: 25%;
+        top: 12%;
+    }
+}
+
+
+@keyframes contentAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes contentDisappear {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
